@@ -1,0 +1,149 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    z-index: 3;    
+    overflow: hidden;
+    color: white;
+}
+
+.headerContMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header_nav_redes {
+    filter: invert(100%);
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-top: .1rem;    
+}
+
+.header_logo {
+    align-self: flex-start;
+
+}
+
+.header_logo img {            
+    filter: invert(100%);
+    height: 30px;
+    width: 30px;
+}
+
+/**********************/
+.header_groupRight {
+    position: absolute;
+    right: 3rem;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.containerMenu {
+    cursor: pointer;        
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.containerMenu_bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+.header_nav {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100vw;
+    z-index: 10;
+    font-family: "DM Serif Display";
+}
+
+.header_nav ul {
+    display: flex; 
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.header_nav ul li a {
+    color: white;
+    position: relative;    
+    opacity: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.header_nav_h2 {
+    /* color: white; */
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    position: absolute;
+    left: 1rem; 
+    top: 1rem;
+    opacity: 0;
+}
+
+.header_nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 0;
+    transform-origin: left;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+    background-color: white;
+}
+
+.header_nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.header_nav .close {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    opacity: 0;
+    cursor: pointer;
+    height: 15px;
+    width: 30px;    
+}
+
+.header_nav .close div::before, 
+.header_nav .close div::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: background .5s ease;
+}
+
+.header_nav .close div::before {
+    transform: rotate(-45deg);
+}
+
+.header_nav .close div::after {
+    transform: rotate(45deg);
+}
