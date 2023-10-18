@@ -12,8 +12,9 @@
     height: 100vh;
     width: 100%;    
     padding: 0 3rem;
-    /* background-color: black; */
-    color: white;
+    /* background-color: white; */
+    color: black;
+    font-family: "Montserrat";
 }
 
 .home_textMain {    
@@ -27,9 +28,10 @@
     width: fit-content;
     height:fit-content;    
     font-family: "DM Serif Display";
-    font-weight: lighter;
+    font-family: "Montserrat";
+    font-weight: 600;
     line-height: 12rem;
-    letter-spacing: 0.625rem;
+    /* letter-spacing: 0.125rem; */
 }
 
 .home_textMain-parrafo {    
@@ -43,6 +45,7 @@
 
 .home_textMain-parrafo-arrow {
     filter: invert(100%);
+    background-color: white;
     width: 18px;    
     height: 18px;
 }

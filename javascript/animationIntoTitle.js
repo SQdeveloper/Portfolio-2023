@@ -6,6 +6,7 @@ let timel = gsap.timeline({scrollTrigger:{
     scrub:2,
     pin:true
 }});
+
 timel
 .to(".contentTitleProyects_title-center",{
    height: "100vh",
@@ -16,15 +17,15 @@ timel
  .to(".contentTitleProyects_title-bottom",{
     bottom: "-50%",
  },'a')
-.to("#topH",{
-    top: "60%"
- },'a')
- .to("#bottomH",{
-    bottom: "-30%"
- },'a')
-.to("#center-h1",{
-   top: "-30%"
-},'a')
+// .to("#topH",{
+//     top: "60%"
+//  },'a')
+//  .to("#bottomH",{
+//     top: "-30%"
+//  },'a')
+// .to("#center-h1",{
+//    top: "-30%"
+// },'a')
 .to(".carousel",{
    delay: -0.2,
    marginTop: "0%"

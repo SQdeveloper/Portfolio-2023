@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "gsap": "^3.12.2",
+    "sheryjs": "^1.0.0-beta.0.0.6",
     "smooth-scrollbar": "^8.8.4"
   }
 }

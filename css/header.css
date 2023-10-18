@@ -21,8 +21,7 @@ header {
     height: 100vh;
 }
 
-.header_nav_redes {
-    filter: invert(100%);
+.header_nav_redes {    
     width: 25px;
     height: 25px;
     display: block;
@@ -30,12 +29,15 @@ header {
 }
 
 .header_logo {
+    font-family: "Montserrat";
     align-self: flex-start;
-
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: black;
 }
 
 .header_logo img {            
-    filter: invert(100%);
+    /* filter: invert(100%); */
     height: 30px;
     width: 30px;
 }
@@ -61,7 +63,7 @@ header {
 .containerMenu_bar {
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: black;
 }
 
 .header_nav {

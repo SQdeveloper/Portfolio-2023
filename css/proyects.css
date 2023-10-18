@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    /* color: white; */
 }
 
 .contentTitleProyects_title-top {
@@ -11,6 +12,8 @@
     height: 50vh;    
     overflow: hidden;    
     z-index: 9;
+    background-color: white;
+
 }
 
 .contentTitleProyects_title-bottom {    
@@ -19,12 +22,13 @@
     width: 100%;
     height: 50vh;    
     overflow: hidden;
+    background-color: white;
 }
 
 .contentTitleProyects h1 {    
-    font-family: "DM Serif Display";
-    font-weight: lighter;
-    font-size: 16rem;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 13rem;
     position: absolute;    
     left: 50%;        
     transform: translateX(-50%);
@@ -48,6 +52,7 @@
     transform-origin: center;
     transition: all  cubic-bezier(.19, 1, 0.22,1)1s;
     overflow: hidden;
+    background-color: black;
 }
 
 .footer {
