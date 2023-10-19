@@ -2,15 +2,14 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
+    width: 100%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    z-index: 3;    
+    z-index: 4;
     overflow: hidden;
-    color: white;
+    color: white;    
 }
 
 .headerContMenu {
@@ -37,19 +36,15 @@ header {
 }
 
 .header_logo img {            
-    /* filter: invert(100%); */
     height: 30px;
     width: 30px;
 }
 
 /**********************/
-.header_groupRight {
-    position: absolute;
-    right: 3rem;
-    top: 5%;
+.header_groupRight {            
     display: flex;
     align-items: center;
-    gap: 1.3rem;
+    gap: 1.3rem;    
 }
 
 .containerMenu {
@@ -76,7 +71,8 @@ header {
     align-items: center;
     right: -100vw;
     z-index: 10;
-    font-family: "DM Serif Display";
+    font-family: "Montserrat";
+    font-weight: bold;
 }
 
 .header_nav ul {
@@ -94,14 +90,14 @@ header {
     letter-spacing: .2rem;
 }
 
-.header_nav_h2 {
-    /* color: white; */
+.header_nav_h2 {    
     font-weight: lighter;
     letter-spacing: .1rem;
     position: absolute;
     left: 1rem; 
     top: 1rem;
     opacity: 0;
+    color: white;
 }
 
 .header_nav ul li a::after {
