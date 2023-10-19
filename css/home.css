@@ -17,10 +17,6 @@
     font-family: "Montserrat";
 }
 
-.movercirc video{
-    transform: translate(-50%, -50%) scale(.2)
-}
-
 .home_textMain {    
     width: fit-content;
     display: flex;
