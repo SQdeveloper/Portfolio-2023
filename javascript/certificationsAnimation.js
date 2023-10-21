@@ -1,48 +1,49 @@
 
-$(document).ready(function() {
-    TweenMax.set(".proyect-preview", {width:0});
+const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
+const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+// const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
 
-    let t1 =new TimelineLite();
 
-    $(document).on("mouseover", ".navigation-item", function(evt) {
-        t1 = new TimelineLite();    
-        t1.to(".proyect-preview", 1, {
-            width: "600px",
-            ease: Expo.easeInOut
-        })
-    }).on("mouseout", ".navigation-item", function(evt) {
-        t1 = new TimelineLite();
-        t1.to(".proyect-preview", .5, {
-            width: 0,
-            ease: Expo.easeInOut
-        })
+gsap.set(photos, {yPercent:101})
+
+// ScrollTrigger.create({
+//   trigger:".gallery",
+//   start:"top top",
+//   end: "bottom bottom",
+//   // pin: ".right",  
+// })
+
+const allPhotos = gsap.utils.toArray(".desktopPhoto")
+
+let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(min-width: 600px)", () => {
+
+  // this setup code only runs when viewport is at least 600px wide  
+  ScrollTrigger.create({
+    trigger:".gallery",
+    start:"top top",
+    end:"bottom bottom",
+    pin:".right"
+  })
+
+  //create scrolltrigger for each details section
+  //trigger photo animation when headline of each details section 
+  //reaches 80% of window height
+  details.forEach((detail, index)=> {
+
+    let headline = detail.querySelector("h1")
+    let animation = gsap.timeline()
+      .to(photos[index], {yPercent:0})
+      .set(allPhotos[index], {autoAlpha:0})
+    ScrollTrigger.create({
+      trigger:headline,
+      start:"top 80%",
+      end:"top 50%",
+      animation:animation,
+      scrub:true,
+      markers:true
     })
-})
-
-$(".navigation-link-1").hover(function() {
-    $(".proyect-preview").css({ "background-image": "url(../assets/img/proyects/Cr7page.png)" });
-  });
-
-  $(".navigation-link-2").hover(function() {
-    $(".proyect-preview").css({ "background-image": "url(../assets/img/proyects/PoolDorado.png)" });
-  });
-
-  $(".navigation-link-3").hover(function() {
-    $(".proyect-preview").css({ "background-image": "url(../assets/img/proyects/PoolDorado.png)" });
-  });
-
-  $(".navigation-link-4").hover(function() {
-    $(".proyect-preview").css({ "background-image": "url(../assets/img/proyects/PoolDorado.png)" });
-  });
-
-  $(".navigation-link-5").hover(function() {
-    $(".proyect-preview").css({ "background-image": "url(../assets/img/proyects/PoolDorado.png)" });
-  });
-
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop(),
-      dh = $(document).height(),
-      wh = $(window).height();
-    scrollPercent = (scroll / (dh - wh)) * 100;
-    $(".progressbar").css("height", scrollPercent + "%");
-  });
+  })		    
+});
