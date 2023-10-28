@@ -3,6 +3,7 @@
 html {
     font-family: "Inter";
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -12,7 +13,7 @@ html {
 }
 
 .main {
-    background-color: white;
+    background-color: black;
 }
 
 button {

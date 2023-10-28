@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem 3rem;
+    font-family: "Montserrat";
+}
+
+.contact_title {
+    font-size: 6rem;
+    color: black;
+}
+
+.contact_text {
+    line-height: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.contact_ancle {
+    border: 1px solid black;
+    padding: .8rem 1.2rem;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+    transition: background-color .4s, color .4s;
+    display: block;
+    margin: 1rem 0;
+}
+
+.contact_ancle:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact_redes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact_redes-img {
+    width: 30px;
+    height: 32px;        
+}

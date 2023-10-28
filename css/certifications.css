@@ -1,12 +1,33 @@
-.certifications {
-    background-color: black;
+.certifications {    
     position: relative;
     color: white;
-    display: flex;
-    font-family: "averta cy w10";
+    display: flex;    
     padding: 0 3rem;
+	flex-direction: column;
 }
 
+/********** Code for certifications title **********/
+.certifications_tContent_text {
+	margin: 4rem 0 0rem;
+}
+
+.certifications_tContent_text > p {
+	font-size: 170px;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	font-weight: bold;
+	text-transform: uppercase;	
+	width: 100%;	
+	overflow-wrap: break-word;
+}
+
+.certifications_tContent_text span {
+	transition: color .1s;
+}
+.certifications_tContent_text span:hover {
+	color: white;
+}
+/********************/
 body {
 	background:#EEF4FF;
 	margin:0;
@@ -14,39 +35,26 @@ body {
 	color:#333;
 }
 
-/* .spacer {
-	width:100%;
-	height:50vh;
-	background:#ddd;
-} */
-
-
 .gallery h1 {
-	font-size:clamp(2em, 4vw, 6em);
-}
-
-.gallery p {
-	font-size:clamp(1.4em, 2.5vw, 3.5em);
-	line-height:1.4;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-family: "Montserrat";
 }
 
 
 .gallery {
   display:flex;	
   width: 100%;  
-  /* outline:1px solid red; */
   justify-content: space-between;
 }
 
 .left {
-	width: 50%;
-    /* margin-right: 2rem;   */    
+	width: 50%;    
     padding-right: 2rem;    
 }
 
 .right {    
-	height:100vh;    
-	/* outline:1px solid purple; */
+	height:100vh;    	
 	width:50%;
 	display:flex;
 	flex-direction:column;

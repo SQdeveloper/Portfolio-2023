@@ -1,7 +1,6 @@
 
 const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
 const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
-// const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
 
 
 gsap.set(photos, {yPercent:101})
@@ -43,7 +42,7 @@ mm.add("(min-width: 600px)", () => {
       end:"top 50%",
       animation:animation,
       scrub:true,
-      markers:true
+      markers:false
     })
   })		    
 });
