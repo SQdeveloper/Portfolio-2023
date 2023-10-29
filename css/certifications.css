@@ -12,13 +12,36 @@
 }
 
 .certifications_tContent_text > p {
+	position: relative;
 	font-size: 170px;
 	color: transparent;
 	-webkit-text-stroke: 1px white;
 	font-weight: bold;
 	text-transform: uppercase;	
 	width: 100%;	
-	overflow-wrap: break-word;
+	overflow-wrap: break-word;	
+	overflow: hidden;
+}
+
+.certifications_tContent_text > p:before {
+	position: absolute;
+	width: 0;	
+	content: attr(data-text);
+	overflow: hidden;
+	color: white;
+	transition: all 1s ease-in;
+}	
+
+.certifications_tContent_text > p:nth-child(2)::before {
+	transition-delay: .9s;
+}
+
+.certifications_tContent_text > p:nth-child(3)::before {
+	transition-delay: 1.8s;
+}
+
+.certifications_tContent_text > p.active:before {
+	width: 100%;
 }
 
 .certifications_tContent_text span {

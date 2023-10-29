@@ -1,16 +1,8 @@
-
 const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
 const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
 
 
 gsap.set(photos, {yPercent:101})
-
-// ScrollTrigger.create({
-//   trigger:".gallery",
-//   start:"top top",
-//   end: "bottom bottom",
-//   // pin: ".right",  
-// })
 
 const allPhotos = gsap.utils.toArray(".desktopPhoto")
 
@@ -46,3 +38,20 @@ mm.add("(min-width: 600px)", () => {
     })
   })		    
 });
+
+/******* CERTIFICATIONS TITLE ANIMATION */
+const Ctitles = document.querySelectorAll(".certifications_tContent_text p");
+
+const callBack = (entries)=>{  
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) {      
+      Ctitles.forEach(title=>{
+        title.classList.add("active");
+      })    
+    }
+  })
+}
+
+const observer = new IntersectionObserver(callBack, {threshold:.8});
+
+observer.observe(Ctitles[0]);
