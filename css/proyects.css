@@ -9,6 +9,10 @@
     background-color: black;
 }
 
+.mask {
+    display: block;
+}
+
 .contentTitleProyects_title-top {
     position: absolute;
     top: 0;

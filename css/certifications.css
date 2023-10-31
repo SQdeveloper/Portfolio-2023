@@ -29,15 +29,15 @@
 	content: attr(data-text);
 	overflow: hidden;
 	color: white;
-	transition: all 1s ease-in;
+	transition: all .3s ease-in;
 }	
 
 .certifications_tContent_text > p:nth-child(2)::before {
-	transition-delay: .9s;
+	transition-delay: .3s;
 }
 
 .certifications_tContent_text > p:nth-child(3)::before {
-	transition-delay: 1.8s;
+	transition-delay: .6s;
 }
 
 .certifications_tContent_text > p.active:before {

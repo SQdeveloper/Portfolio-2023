@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;    
-    left: 1rem;
+    left: 1.2rem;
     bottom: 1rem;
 }
 
@@ -105,4 +105,95 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 1150px) {
+    .home_textmain-h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .home_textmain-h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: .5rem 1rem;
+    }
+
+    .header_logo {
+        font-size: 1.2rem;
+    }
+    
+    .header_nav_redes {
+        width: 20px;
+        height: 20px;
+    }
+
+    .containerMenu {
+        gap: .2rem;
+    }
+
+    .containerMenu_bar {
+        width: 20px;
+        height: 2px 
+    }
+    .home_textmain-h1 {
+        line-height: 6.5rem;
+        font-size: 5rem;
+    }
+
+    .home_textMain-parrafo {
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+
+    .home_contentCircle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .home_textCircle-letter {
+        transform-origin: 0 40px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 425px) {
+    .home {
+        padding: 0;
+    }
+
+    .home_textmain-h1 {
+        font-size: 3    rem;    
+        line-height: 5rem;        
+    }
+
+    .home_textMain {
+        overflow-wrap: break-word;       
+
+    }
+    .home_contentCircle {
+        display: none;
+    }
+
+    .home_textMain-parrafo {
+        align-self: start;
+        margin-left: .3rem;
+    }
+
+    .home_textMain-parrafo-arrow {
+        width: 12px;
+        height: 12px;
+    }
+
+    .home_textmain-h1-span:nth-child(4) {
+        overflow-wrap: break-word;
+        width: 100%;
+        overflow: hidden;
+        display: none;
+    }
 }

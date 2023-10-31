@@ -30,9 +30,10 @@
                     <div></div>    
                 </div>
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="">Contactame</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#proyects">PROYECTS</a></li>
+                    <li><a href="#certifications">CERTIFICATIONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>                                    
             </nav>  
             <div class="home_textMain">
@@ -52,7 +53,7 @@
             </div>
         </section>
 
-        <section class="contentTitleProyects">
+        <section class="contentTitleProyects" id="proyects">
             <div class="contentTitleProyects_title-top">
                 <h1 id="topH" class="contentTitleProyects_title-h1">PROYECTS</h1>
             </div>
@@ -63,7 +64,7 @@
                             <div class="swiper one">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="" class="content">
+                                        <a target="_blank" href="https://sqdeveloper.github.io/cr7-Page" class="content target-view-proyect">
                                             <span class="large-text before">CR7 PAGE</span>                                
                                                 <figure class="image-wrap">
                                                     <img class="" src="./assets/img/proyects/Cr7page.png" alt="">
@@ -72,7 +73,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="" class="content">
+                                        <a target="_blank" href="https://sqdeveloper.github.io/Apple-Page" class="content target-view-proyect">
                                             <span class="large-text before">APPLE PG</span>
                                             <figure class="image-wrap">
                                                 <img src="./assets/img/proyects/apple-page-1.png" alt="">
@@ -81,7 +82,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="" class="content">
+                                        <a target="_blank" href="https://sqdeveloper.github.io/Pariona" class="content target-view-proyect">
                                             <span class="large-text before">PARIONA</span>
                                             <figure class="image-wrap">
                                                 <img src="./assets/img/proyects/Pariona.png" alt="">
@@ -90,7 +91,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="" class="content">
+                                        <a target="_blank" href="https://sqdeveloper.github.io/Pool-Dorado---Transportes" class="content target-view-proyect">
                                             <span class="large-text before">PDORADO</span>
                                             <figure class="image-wrap">
                                                 <img src="./assets/img/proyects/PoolDorado.png" alt="">
@@ -99,7 +100,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="" class="content">
+                                        <a target="_blank" href="https://sqdeveloper.github.io/HBO-MAX" class="content target-view-proyect">
                                             <span class="large-text before">HBO-MAX</span>
                                             <figure class="image-wrap">
                                                 <img src="./assets/img/proyects/Hbo-max.png" alt="">
@@ -170,7 +171,7 @@
             </div>
         </section>
 
-        <section class="certifications">                    
+        <section class="certifications" id="certifications">                    
             <div class="certifications_tContent_text">
                 <p data-text="Here are">Here are</p>
                 <p data-text="some of my">some of my</p>
@@ -214,7 +215,7 @@
                 </div>
             </div>        
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="contact_title">Let's Work Together</h2>
             <p class="contact_text">
                 Send me a message. I'm sure that together we can do amazing things
@@ -236,7 +237,10 @@
             <span>Front-end Developer</span>
         </div>
     </footer>
+    
+    <!-- Swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>    
+    
     <!--  Gsap is needed for Basic Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -245,16 +249,12 @@
     
     <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    
+    <!-- Shery for mousefollow and others something -->
     <script src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
-    <script src="./javascript/index.js"></script>
-    <script src="./javascript/configGsap.js"></script>
-    <script src="./javascript/carousel.js"></script>
-    <script src="./javascript/menu.js"></script>
-    <script src="./javascript/changeBackgroundColor.js"></script>
-    <script src="./javascript/animationIntoTitle.js"></script>    
-    <script src="./javascript/codeShery.js"></script>    
-    <script src="./javascript/certificationsAnimation.js"></script>
-    <script src="./javascript/titleCertifications.js"></script>
+
+    <!-- Index -->
+    <script type="module" src="./javascript/index.js"></script>    
 </body>
 
 </html>
